@@ -8,13 +8,13 @@ import './output.css'
 function App() {
 
   return (
-    <>
+    <div className="max-w-screen-2xl">
       <Header />
       <Hero />
       <About />
       <Features />
       <Footer />
-   </>
+   </div>
   )
 }
 

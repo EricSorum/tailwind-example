@@ -1,10 +1,10 @@
-import { Feature } from "../lib/definitions"
+import { FeatureType } from "../lib/definitions"
 
-export default function Feature() {
+export default function Feature(props: FeatureType) {
   return (
     <div className="flex flex-col items center">
-      <img src={feature.img} />
-      <div>{feature.text}</div>
+      <img src={props.img} />
+      <div>{props.txt}</div>
     </div>
   )
 }

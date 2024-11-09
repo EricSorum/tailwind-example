@@ -1,4 +1,5 @@
-export type Feature = {
-  img: any;
+export type FeatureType = {
+  id: number;
+  img: string;
   txt: string;
 }
