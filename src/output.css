@@ -554,6 +554,11 @@ video {
   display: none;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .flex {
   display: flex;
 }
@@ -566,12 +571,12 @@ video {
   width: 100%;
 }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.max-w-screen-2xl {
+  max-width: 1536px;
 }
 
-.grid-cols-\[1fr_500px_2fr\] {
-  grid-template-columns: 1fr 500px 2fr;
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid-cols-\[1fr_2fr\] {
