@@ -21,7 +21,7 @@ export default function Nav() {
   ]
 
   return (
-    <ul className="flex flex-col items center">
+    <ul className="flex items-center gap-5">
       {menu.map((link: NavType) =>
       <div key={link.id}>
         <NavLink {...link} />
