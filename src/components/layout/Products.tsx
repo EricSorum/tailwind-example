@@ -48,10 +48,12 @@ export default function Features() {
   ]
 
   return (
-    <div className="flex justify-center items-center w-full flex-col pt-10 mx-5 2xl:mx-0">
+    <div className="flex justify-center items-center w-full flex-col py-10 mx-5 2xl:mx-0">
       <div className="grid md:grid-cols-3 grid-cols-2 gap-10">
-        {products.map((product: ProductType) => 
-            <img src={product.img} className="w-full max-w-[380px]"/>              
+        {products.map((product: ProductType) =>
+          <div className="outline outline-slate-100 rounded-lg m-1"> 
+            <img src={product.img} className="w-full max-w-[380px] p-10"/>
+          </div>
           )
         }
       </div>
