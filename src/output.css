@@ -559,6 +559,16 @@ video {
   margin-right: auto;
 }
 
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -579,6 +589,18 @@ video {
   max-width: 1536px;
 }
 
+.max-w-\[300\] {
+  max-width: 300;
+}
+
+.max-w-\[300px\] {
+  max-width: 300px;
+}
+
+.max-w-\[360px\] {
+  max-width: 360px;
+}
+
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -587,8 +609,20 @@ video {
   grid-template-columns: 1fr 2fr;
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-center {
@@ -603,12 +637,24 @@ video {
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .gap-10 {
   gap: 2.5rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-3 {
   gap: 0.75rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .gap-5 {
@@ -653,6 +699,10 @@ video {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -671,4 +721,68 @@ p {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 480px) {
+  .xs\:flex-row {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:grid {
+    display: grid;
+  }
+
+  .md\:max-w-full {
+    max-width: 100%;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:flex-col {
+    flex-direction: column;
+  }
+
+  .md\:items-start {
+    align-items: flex-start;
+  }
+
+  .md\:items-end {
+    align-items: flex-end;
+  }
+
+  .md\:gap-5 {
+    gap: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid {
+    display: grid;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }

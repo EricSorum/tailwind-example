@@ -26,8 +26,8 @@ export default function Features() {
   ]
 
   return (
-    <div className="flex justify-center items-center w-full flex-col pt-10">
-      <div className="grid grid-cols-3">
+    <div className="w-full pt-10 mx-5 2xl:mx-0">
+      <div className="md:grid grid-cols-3 md:gap-5 flex flex-col items-center">
         {features.map((feature: FeatureType) => (
             <div key={feature.id}>
               <Feature {...feature} />
