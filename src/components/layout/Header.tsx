@@ -1,11 +1,19 @@
+
 import Navbar from '../Navbar'
+import Socials from '../Socials'
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 export default function Header() {
+
+
+
   return(
-    <div className="grid grid-cols-3 w-full pt-5">
+    <div className="grid grid-cols-3 w-full pt-10">
       <Navbar />      
-      <div className="text-center"><h1>Tailwind Example</h1></div>
-      <div className="text-right">Social links</div>
+      <div className="text-center"><h1 className="text-xl">Tailwind Example</h1></div>
+      <Socials />
+
+
 
     </div>
   )

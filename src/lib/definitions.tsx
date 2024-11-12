@@ -9,3 +9,16 @@ export type NavType = {
   txt: string;
   url: string;
 }
+
+export type SocialType = {
+  id: number;
+  icon: string;
+  url: string;
+}
+
+export type ProductType = {
+  id: number;
+  img: string;
+  url: string;
+  alt: string;
+}
