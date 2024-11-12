@@ -51,8 +51,8 @@ export default function Features() {
     <div className="flex justify-center items-center w-full flex-col py-10 mx-5 2xl:mx-0">
       <div className="grid md:grid-cols-3 grid-cols-2 gap-10">
         {products.map((product: ProductType) =>
-          <div className="outline outline-slate-100 rounded-lg m-1"> 
-            <img src={product.img} className="w-full max-w-[380px] p-10"/>
+          <div className="outline outline-slate-100 rounded-lg m-1 bg-slate-100 hover:bg-white hover:shadow-xl"> 
+            <a href="javascript:void(0)"><img src={product.img} className="w-full max-w-[380px] p-10"/></a>
           </div>
           )
         }
